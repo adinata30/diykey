@@ -18,7 +18,7 @@
     <script src="https://kit.fontawesome.com/edec9478a1.js" crossorigin="anonymous"></script>
 
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="https://diykey.herokuapp.com/css/app.css" rel="stylesheet">
 </head>
 <body class="bg-dark text-light">
     <div id="app">
