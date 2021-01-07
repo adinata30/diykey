@@ -1,11 +1,7 @@
 <?php
 
 use Illuminate\Support\Str;
-<<<<<<< HEAD
 $DATABASE_URL=parse_url("postgres://qoomvhbxtlxlfq:860e7c09ed3add58ee6d17032b1e69d65cb795eeea83c52c60ce937aa6d1778a@ec2-54-147-98-183.compute-1.amazonaws.com:5432/dbh1on7gk0fmbc");
-=======
-
->>>>>>> 146230168c4490e801aa66663348be61aefe3911
 return [
 
     /*
@@ -19,11 +15,7 @@ return [
     |
     */
 
-<<<<<<< HEAD
     'default' => env('DB_CONNECTION', 'pgsql'),
-=======
-    'default' => env('DB_CONNECTION', 'mysql'),
->>>>>>> 146230168c4490e801aa66663348be61aefe3911
 
     /*
     |--------------------------------------------------------------------------
@@ -73,20 +65,11 @@ return [
 
         'pgsql' => [
             'driver' => 'pgsql',
-<<<<<<< HEAD
             'host' => $DATABASE_URL["host"],
             'port' => $DATABASE_URL["port"],
             'database' => ltrim($DATABASE_URL["path"],"/"),
             'username' => $DATABASE_URL["user"],
             'password' => $DATABASE_URL["pass"],
-=======
-            'url' => env('DATABASE_URL'),
-            'host' => env('DB_HOST', '127.0.0.1'),
-            'port' => env('DB_PORT', '5432'),
-            'database' => env('DB_DATABASE', 'forge'),
-            'username' => env('DB_USERNAME', 'forge'),
-            'password' => env('DB_PASSWORD', ''),
->>>>>>> 146230168c4490e801aa66663348be61aefe3911
             'charset' => 'utf8',
             'prefix' => '',
             'prefix_indexes' => true,
